@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Box-sizing */
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Reset styles */
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  }
+  
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+	display: block;
+  }
+  
+  /* Headings and body styles */
+  body {
+	line-height: 1;
+	font-family: 'Lato', sans-serif;
+  }
+  
+	
+  
+  /* Links and images */
+  a {
+	text-decoration: none;
+	display: inline-block;
+	color: inherit;
+  }
+  
+  img {
+
+  width: 88px;
+    flex-shrink: 0;
+  }
+  
+  /* Other styles */
+  .header {
+  padding-top: 43px;
+  padding-bottom: 43px;
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  }
+  
+  .body-head {
+	background-color: grey;
+  }
+  
+  .info{
+	display: flex;
+	
+	font-size: 11px;
+line-height: 17px;
+/* identical to box height, or 155% */
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+color: #999999;
+gap: 40px;
+  }
+.counteiner {
+	max-width: 970px;
+	margin: 0 auto;
+  padding: 0 15px;
+
+  }
+.all-image{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.all-image img{
+  width: calc(100% / 3 - 40px / 3);
+}
+.images{
+  background: linear-gradient(360deg, #222222 100%, rgba(0, 0, 0, 0) 100%);
+border-radius: 0px;
+}
+.images .counteiner{
+  padding-bottom: 101px;
+}
+  .header .counteiner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .portfolio:hover{
+  color: #00D6B4;
+  }
+  .about:hover{
+    color: #00D6B4;
+    }
+    .contact:hover{
+      color: #00D6B4;
+      }
+      .abaut{
+        background-image: url(img/img2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        height: 540px;
+      }
+.abaut .counteiner h1{
+  margin: 0 auto;
+  margin-bottom: 29px;
+  font-size: 48px;
+	line-height: 53px;
+	max-width: 465px;
+	color: #FFFFFF;
+
+  justify-content: center;
+}
+.abaut .counteiner  {
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.abaut .counteiner a{
+  text-transform: uppercase;
+
+color: #00D6B4;
+border: 1px solid #00D6B4;
+border-radius: 3px;
+padding: 10px 26px 10px 26px;
+
+}
+.abaut .counteiner a:hover{
+  background-color: #00D6B4;
+  color:black;
+  transition:all 0.5s ;
+
+}
+.images .counteiner h2{
+  text-align: center;
+  margin-bottom: 33px;
+  font-size: 25px;
+line-height: 30px;
+/* identical to box height, or 120% */
+
+text-align: center;
+
+color: #FFFFFF;
+padding-top: 47px;
+}
+.footer{
+  padding-top: 35px;
+  padding-bottom: 37px;
+  background-color: #222222;
+}
+.footer h3{
+  font-size: 18px;
+line-height: 22px;
+/* identical to box height, or 122% */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #C2C2C2;
+
+}
+.footer p{
+  font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+text-align: center;
+
+color: #999999;
+
+}
+@media(max-width:768px) {
+  .all-image img {
+    width: calc(100% / 2 - 10px);
+    
+}
+}
+@media(max-width:450px) {
+  .all-image img {
+    width: 100%;
+    display: flex; 
+    
+}
+.info a{
+  font-size: 10px;
+}
+.abaut .counteiner h1{
+    font-size: 42px;
+    line-height: 42px;
+}
+}
+@media(max-width:500px){
+  .info{
+    gap: 15px;
+  }
+  .images .counteiner {
+    padding-bottom: 15px;
+}
+  }
+
+
+
+  
